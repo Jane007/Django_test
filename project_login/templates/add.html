@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add User</title>
+</head>
+<body>
+    <form action="/add/" enctype="multipart/form-data" method="POST">
+        {% csrf_token %}
+        姓名：<input type="text" value="" name="name"/><br>
+        年龄：<input type="text" value="" name="age"/><br>
+        性别：<label><input type="radio" value="1" name="sex" checked/>男</label>
+            <label><input type="radio" value="0" name="sex"/>女</label>
+        <input type="submit" value="提交">
+    </form>
+
+</body>
+</html>
